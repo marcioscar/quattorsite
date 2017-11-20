@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <!--    Botao Fixo-->
+    <div class="fixed-action-btn">
+        <a class="btn-floating orange">
+            <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red" href="index.html"><i class="material-icons">home</i></a></li>
+            <li><a class="btn-floating orange" href="contato.html"><i class="material-icons">contact_mail</i></a></li>
+            <li><a class="btn-floating green" href="aulas.html"><i class="material-icons">access_time</i></a></li>
+            <li><a class="btn-floating blue" href="clube.html"><i class="material-icons">redeem</i></a></li>
+            <li>
+                <a class="btn-floating yellow darken-2" href="tagua.html"><i class="material-icons">star</i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--fim botao fixo    -->
+
+    <div class="container">
+
+        <!--Menu principal   -->
+        <nav>
+            <div class="nav-wrapper red darken-2">
+                <a href="index.html" class="brand-logo center"><img width="120px" height="40%" class="responsive-img" id="logo" src="/img/logo1.svg" /></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="aulas.html">AULAS</a></li>
+                    <li><a href="clube.html">CLUBE</a></li>
+                    <li><a href="tagua.html">TAGUA</a></li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="aulas.html">AULAS</a></li>
+                    <li><a href="clube.html">CLUBE</a></li>
+                    <li><a href="tagua.html">TAGUATINGA</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="row">
+            <div class="col s12 m12 l12 center orange-text">
+                <h5>Pesquisa Quattor</h5>
+            </div>
+        </div>
+
+        <!--formulario-->
+
+
+        <form class="col s12" id="contactForm" method="post" action="save.php">
+
+            <p>Quais os motivos que o levaram a escolher a Quattor para praticar exercícios? </p>
+            <div class="row">
+                <div class="col s12">
+                    <p>
+                        <input type="checkbox" id="m1" name="m1" value="estrutura" />
+                        <label for="m1">Estrutura Fisica</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m2" name="m2" value="equipamentos" />
+                        <label for="m2">Equipamentos</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m3" name="m3" value="Localizacao" />
+                        <label for="m3">Localização</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m4" name="m4" value="Preco" />
+                        <label for="m4">Preço</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m5" name="m5" value="Modalidades" />
+                        <label for="m5">Modalidades</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m6" name="m6" value="Professores" />
+                        <label for="m6">Professores</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m7" name="m7" value="Atendimento" />
+                        <label for="m7">Atendimento</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m8" name="m8" value="Indicacao" />
+                        <label for="m8">Indicação</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="m9" name="m9" value="Midia" />
+                        <label for="m9">Mídia</label>
+                    </p>
+
+                    <div class="input-field col s12">
+                        <textarea name="outro" id="outro" class="materialize-textarea"></textarea>
+                        <label for="outro">Outros</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col s12 l6">
+                    <p>Quantas Vezes por semana você vem na academia?</p>
+                    <div class="input-field col s12">
+                        <select id="vezes" name="vezes">
+                        <option value="" disabled selected>Escolha sua opção</option>
+                        <option value="1">1 vez</option>
+                        <option value="2">2 vezes</option>
+                        <option value="3">3 vezes</option>
+                        <option value="4">4 vezes</option>
+                        <option value="5">5 ou mais vezes</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <p>Quais modalidades você pratica? </p>
+                    <p>
+                        <input type="checkbox" id="mod1" name="mod1" value="Musculacao" />
+                        <label for="mod1">Musculação</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod2" name="mod2" value="Dancas" />
+                        <label for="mod2">Danças</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod3" name="mod3" value="Lutas" />
+                        <label for="mod3">Lutas</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod4" name="mod4" value="Funcional" />
+                        <label for="mod4">Funcional</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod5" name="mod5" value="Spinning" />
+                        <label for="mod5">Spinnig</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod6" name="mod6" value="Cross Quattor" />
+                        <label for="mod6">Cross Quattor</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod7" name="mod7" value="Personal Training" />
+                        <label for="mod7">Personal Training</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod8" name="mod8" value="Hidroginastica/Hidro Power" />
+                        <label for="mod8">Hidroginástica/Hidro Power</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod9" name="mod9" value="Natacao Infantil" />
+                        <label for="mod9">Natação Infantil</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="mod10" name="mod10" value="Natacao Adulto" />
+                        <label for="mod10">Natação Adulto</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod11" name="mod11" value="Ballet" />
+                        <label for="mod11">Ballet</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod12" name="mod12" value="Pilates Solo" />
+                        <label for="mod12">Pilates Solo</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod13" name="mod13" value="Pilates Estudio" />
+                        <label for="mod13">Pilates Estúdio</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod14" name="mod14" value="Projeto Gestante" />
+                        <label for="mod14">Projeto Gestante</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mod15" name="mod15" value="Judo Infantil" />
+                        <label for="mod15">Judô Infantil</label>
+                    </p>
+                    <div class="col s12">
+                        Outro
+                        <div class="input-field inline">
+                            <input id="outro_mod" name="outro_mod" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Qualificação e Atendimento dos Professores da Musculação </p>
+                            <div class="input-field col s12">
+                                <select id="musculacao" name="musculacao">
+                        <option value="" disabled selected>Escolha sua opção</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Ruim">Ruim</option>
+                        </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Qualificação e Atendimento dos Professores das Aulas Coletivas</p>
+                            <div class="input-field col s12">
+                                <select id="coletiva" name="coletiva">
+                        <option value="" disabled selected>Escolha sua opção</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Ruim">Ruim</option>
+                        </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Qualificação e Atendimento do Professor da Ergometria </p>
+                            <div class="input-field col s12">
+                                <select id="ergometria" name="ergometria">
+                        <option value="" disabled selected>Escolha sua opção</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Ruim">Ruim</option>
+                        </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Qualificação e Atendimento dos Professores da Piscina </p>
+                            <div class="input-field col s12">
+                                <select id="piscina" name="piscina">
+                        <option value="" disabled selected>Escolha sua opção</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Ruim">Ruim</option>
+                        </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Qualificação e Atendimento dos Profissionais da Recepção</p>
+                            <div class="input-field col s12">
+                                <select id="recepcao" name="recepcao">
+                        <option value="" disabled selected>Escolha sua opção</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Ruim">Ruim</option>
+                        </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Qualificação e Atendimento dos Profissionais da Manutenção/Limpeza</p>
+                            <div class="input-field col s12">
+                                <select id="limpeza" name="limpeza">
+                        <option value="" disabled selected>Escolha sua opção</option>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Ruim">Ruim</option>
+                        </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    <p>Você conhece os planos de pagamentos oferecidos pela academia?</p>
+                    <p>
+                        <input name="group1" type="radio" id="plano_sim" value="sim" />
+                        <label for="plano_sim">Sim</label>
+                    </p>
+                    <p>
+                        <input name="group1" type="radio" id="plano_nao" value="nao" />
+                        <label for="plano_nao">Não</label>
+                    </p>
+
+                    <p>Caso queira, deixe sua sugestão de melhorias e se possível cite elogios ou feedbacks para profissionais específicos</p>
+                    <div class="input-field col s12">
+                        <textarea name="mensagem" id="mensagem" class="materialize-textarea"></textarea>
+                        <label for="mensagem">Sugestão</label>
+                    </div>
+                    <div class="col s12">
+                        <button class="btn waves-effect waves-light green" type="submit" name="msg_submited">Enviar
+                            <i class="material-icons right">send</i>
+                        </button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </form>
+
+
+
+        <!--fim do formulario        -->
+
+
+    </div>
+
+
+    <!--    rodapé-->
+    <div class="container">
+        <footer class="page-footer red darken-2">
+
+            <div class="footer-copyright">
+                Quattor Academia - <a class="yellow-text text-lighten-3 center-align" href="http://www.quattoracademia.com.br"> 61 3965-7444 / 61 3042-0068</a>
+            </div>
+
+        </footer>
+    </div>
+    <!--fim rodape    -->
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".button-collapse").sideNav();
+        })
+    </script>
+</body>
+
+</html>

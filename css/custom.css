@@ -1,0 +1,226 @@
+html,
+body {
+    height: 100%;
+
+}
+
+
+/*CUSTOM*/
+
+.home {
+    background-image: url('../img/bubble.png');
+    /*background-color: rgba(0, 0, 0, 0.07);*/
+}
+
+.home-banner {
+    background-image: url('../img/capatransp1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-bannertagua {
+    background-image: url('../img/estrutura3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+.card.medium {
+    height: 450px;
+}
+
+nav {
+    color: #fff;
+    background-color: #ee6e73;
+    width: 100%;
+    height: 94px;
+    line-height: 56px;
+}
+
+.bloco {
+    min-height: 100%;
+    padding-top: 60px;
+}
+
+.bloco h5 {
+    padding-top: 60px;
+}
+
+
+
+.navbar ul a:hover {
+    background-color: transparent;
+    color: #E30613;
+}
+
+nav.nav-extended .nav-wrapper {
+    min-height: 94px;
+    height: auto;
+}
+
+.navbar-fixed {
+    position: absolute;
+    height: 94px;
+    z-index: 997;
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+    display: block;
+    font-size: 24px;
+    height: 94px;
+    line-height: 94px;
+}
+
+.side-nav {
+    /*background: url('../img/dark.png');*/
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.side-nav li > a {
+    color: #fff;
+    font-weight: 100;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: background 0.5s linear;
+}
+
+
+
+
+nav {
+    color: #fff;
+    background-color: #ee6e73;
+    width: 100%;
+    height: 94px;
+    line-height: 56px;
+}
+
+p {
+    font-weight: 300;
+}
+
+.brand-logo {
+    width: 190px;
+    margin-top: 20px;
+}
+
+/*Cores*/
+
+.laranja {
+    background-color: #F39200;
+}
+
+
+.vermelho {
+    background-color: #E30613;
+}
+
+.azul {
+    background-color: #009FE3;
+}
+
+.verde {
+    background-color: #3BAA35;
+}
+
+/*
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 98%;
+}
+*/
+
+/*
+.section {
+    text-align: center !important;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 98%;
+}
+*/
+
+.banner {
+    padding-top: 5rem;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 95%;
+    }
+    .banner {
+        padding-top: 5rem;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 95%;
+    }
+    .banner {
+        padding-top: 15rem;
+    }
+}
+
+.card-clube {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 800px) {
+    /* Force table to not be like tables anymore */
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #no-more-tables tr {
+        border: 1px solid #ccc;
+    }
+    #no-more-tables td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+    #no-more-tables td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+    /*
+	Label the data
+	*/
+    #no-more-tables td:before {
+        content: attr(data-title);
+    }
+}
