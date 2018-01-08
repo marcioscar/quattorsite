@@ -151,12 +151,12 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['msg_submited']) ) {
 
 }
 ?>
-    <!--<a href="index.html">Voltar</a>-->
+    <!--<a href="index.php">Voltar</a>-->
 
 
     <body>
 
-        <a href="index.html" class="waves-effect waves-light btn-large"><i class="material-icons left">home</i>Voltar</a>
+        <a href="index.php" class="waves-effect waves-light btn-large"><i class="material-icons left">home</i>Voltar</a>
     </body>
 
 </html>

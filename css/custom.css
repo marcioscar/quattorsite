@@ -12,6 +12,16 @@ body {
     /*background-color: rgba(0, 0, 0, 0.07);*/
 }
 
+.pequena {
+    line-height: 1px;
+    height: 1px
+}
+
+.table caption {
+    padding-bottom: 20px;
+    color: red;
+}
+
 .home-banner {
     background-image: url('../img/capatransp1.jpg');
     background-repeat: no-repeat;
@@ -31,7 +41,7 @@ body {
 }
 
 .card.medium {
-    height: 450px;
+    height: 600px;
 }
 
 .card-content p2 {

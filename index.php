@@ -32,7 +32,7 @@ FIM TO-DO
     <header>
         <!--        Menu mobile-->
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.php">HOME</a></li>
             <li><a href="contato.html">CONTATO</a></li>
             <li><a href="aulas.html">AULAS</a></li>
             <li><a href="clube.html">CLUBE</a></li>
@@ -42,10 +42,10 @@ FIM TO-DO
         <div class="navbar-fixed">
             <nav class="navbar z-depth-0">
                 <div class="nav-wrapper container">
-                    <a href="index.html" class="brand-logo"><img class="responsive-img" id="logo" src="/img/logo_novo.png" /></a>
+                    <a href="index.php" class="brand-logo"><img class="responsive-img" id="logo" src="/img/logo_novo.png" /></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index.php">HOME</a></li>
                         <li><a href="contato.html">CONTATO</a></li>
                         <li><a href="aulas.html">AULAS</a></li>
                         <li><a href="clube.html">CLUBE</a></li>
@@ -107,9 +107,6 @@ FIM TO-DO
             <?php include("conecta.php"); ?>
             <div class="col s12 m4 l4">
                 <div class="card medium">
-                    <div class="card-content">
-                        <p2>AULAS DE HOJE</p2>
-                    </div>
                     <div class="card-tabs">
                         <ul class="tabs tabs-fixed-width">
                             <li class="tab"><a href="#ginastica">Ginastica</a></li>
@@ -120,12 +117,15 @@ FIM TO-DO
                     <div class="card-content ">
 
                         <div id="ginastica">
-                            <table class="table striped bordered">
+                            <table class="table striped pequena">
+                                <caption>AULAS DE HOJE</caption>
+
                                 <?php
                         $aulas = listaAulasGinastica($conexao);  
                         foreach($aulas as $aula):
                         $hora = date_create($aula['hora']);
                     ?>
+
                                     <tr>
                                         <td>
                                             <?=$aula['aula']?>
@@ -143,7 +143,8 @@ FIM TO-DO
 
                         </div>
                         <div id="piscina">
-                            <table class="table striped bordered">
+                            <table class="table striped pequena">
+                                <caption>AULAS DE HOJE</caption>
                                 <?php
                         $aulas = listaAulasPiscina($conexao);  
                         foreach($aulas as $aula):
@@ -165,7 +166,8 @@ FIM TO-DO
                             </table>
                         </div>
                         <div id="lutas">
-                            <table class="table striped bordered">
+                            <table class="table striped pequena">
+                                <caption>AULAS DE HOJE</caption>
                                 <?php
                         $aulas = listaAulasLuta($conexao);  
                         foreach($aulas as $aula):

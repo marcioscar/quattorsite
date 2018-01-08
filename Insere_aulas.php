@@ -1,6 +1,6 @@
 <?php
 
-$aula = $_GET ["aula"];
+$aula = strtoupper($_GET ["aula"]);
 $dia = $_GET ["dia"];
 $hora = $_GET ["hora"];
 $tipo = $_GET ["tipo"];
