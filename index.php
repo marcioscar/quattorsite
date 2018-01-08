@@ -103,23 +103,97 @@ FIM TO-DO
                 </div>
             </div>
 
-            <!--choque-->
+            <!--aulas-->
+            <?php include("conecta.php"); ?>
             <div class="col s12 m4 l4">
-                <div class="card  azul">
-                    <div class="card-image">
-                        <img class="activator" src="img/fechamento.jpg">
-                        <!--                        <a href="#jiu" class="btn-floating halfway-fab waves-effect red activator pulse"><i class="material-icons">photo_camera</i></a>-->
+                <div class="card medium">
+                    <div class="card-content">
+                        <p2>AULAS DE HOJE</p2>
+                    </div>
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a href="#ginastica">Ginastica</a></li>
+                            <li class="tab"><a href="#piscina">Piscina</a></li>
+                            <li class="tab"><a href="#lutas">Lutas</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content ">
+
+                        <div id="ginastica">
+                            <table class="table striped bordered">
+                                <?php
+                        $aulas = listaAulasGinastica($conexao);  
+                        foreach($aulas as $aula):
+                        $hora = date_create($aula['hora']);
+                    ?>
+                                    <tr>
+                                        <td>
+                                            <?=$aula['aula']?>
+                                        </td>
+                                        <td>
+                                            <?=date_format($hora, 'H:i');?>
+                                        </td>
+                                    </tr>
+
+                                    <?php    
+                            endforeach    
+
+                    ?>
+                            </table>
+
+                        </div>
+                        <div id="piscina">
+                            <table class="table striped bordered">
+                                <?php
+                        $aulas = listaAulasPiscina($conexao);  
+                        foreach($aulas as $aula):
+                        $hora = date_create($aula['hora']);
+                    ?>
+                                    <tr>
+                                        <td>
+                                            <?=$aula['aula']?>
+                                        </td>
+                                        <td>
+                                            <?=date_format($hora, 'H:i');?>
+                                        </td>
+                                    </tr>
+
+                                    <?php    
+                            endforeach    
+
+                    ?>
+                            </table>
+                        </div>
+                        <div id="lutas">
+                            <table class="table striped bordered">
+                                <?php
+                        $aulas = listaAulasLuta($conexao);  
+                        foreach($aulas as $aula):
+                        $hora = date_create($aula['hora']);
+                    ?>
+                                    <tr>
+                                        <td>
+                                            <?=$aula['aula']?>
+                                        </td>
+                                        <td>
+                                            <?=date_format($hora, 'H:i');?>
+                                        </td>
+                                    </tr>
+
+                                    <?php    
+                            endforeach    
+
+                    ?>
+                            </table>
+                        </div>
                     </div>
 
-                    <!--
-                    <div class="card-content white-text light">
-                        <span class="card-title activator ">Festival de Natação</span>
-                        <h4>Muita diversão para nossos peixinhos !!!</h4>
-                    </div>
--->
+
                 </div>
+
+
             </div>
-            <!--            fim choque-->
+            <!--            fim aulas-->
             <!--treino-->
             <div class="col s12 m4 l4">
                 <div class="card vermelho">
@@ -329,6 +403,7 @@ FIM TO-DO
                 scrollOffset: 0
             });
         })
+
     </script>
 </body>
 

@@ -34,6 +34,15 @@ body {
     height: 450px;
 }
 
+.card-content p2 {
+    font-size: 1.5em;
+    padding-top: 0px;
+    padding-bottom: 0;
+    color: red;
+    font-weight: 400;
+
+}
+
 
 
 nav {
