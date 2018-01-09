@@ -30,3 +30,13 @@ function listaAulasLuta($conexao){
     }   
         return $aulas;
 }
+
+function listaAulasLutaSeg($conexao){
+        $dia = date('w');
+        $aulas = array();
+        $resultado = mysqli_query($conexao, "select * from ginastica where tipo='luta' and dia = 1 order by hora");    
+        while ($aula = mysqli_fetch_assoc($resultado)){
+            array_push($aulas, $aula); 
+    }   
+        return $aulas;
+}

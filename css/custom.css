@@ -8,8 +8,8 @@ body {
 /*CUSTOM*/
 
 .home {
-    background-image: url('../img/bubble.png');
-    /*background-color: rgba(0, 0, 0, 0.07);*/
+    /*background-image: url('../img/white_texture.png');*/
+    background-color: rgba(242, 242, 242);
 }
 
 .pequena {
@@ -41,7 +41,7 @@ body {
 }
 
 .card.medium {
-    height: 600px;
+    height: 550px;
 }
 
 .card-content p2 {
