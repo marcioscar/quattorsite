@@ -219,9 +219,7 @@ FIM TO-DO
             <div class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img class="activator" src="img/combo%20verao%201.jpg">
-
-
+                        <img class="activator" src="img/spinning2018.jpg">
                     </div>
                 </div>
             </div>
