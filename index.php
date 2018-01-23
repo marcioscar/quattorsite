@@ -198,15 +198,9 @@ FIM TO-DO
             <!--            fim aulas-->
             <!--treino-->
             <div class="col s12 m4 l4">
-                <div class="card vermelho">
+                <div class="card">
                     <div class="card-image">
-                        <img class="activator" src="img/recesso.jpg">
-                        <!--                        <a class="btn-floating halfway-fab waves-effect red activator pulse"><i class="material-icons">add</i></a>-->
-                    </div>
-                    <div class="card-content white-text light">
-                        <span class="card-title activator white-text light">Recesso de Final de Ano</span>
-                        <h6 class="light">Fique atento ao período de recesso das aulas dos pequenos !!!</h6><br>
-
+                        <img class="activator" src="img/spinning2018.jpg">
                     </div>
                 </div>
             </div>
@@ -219,7 +213,7 @@ FIM TO-DO
             <div class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img class="activator" src="img/spinning2018.jpg">
+                        <img class="activator" src="img/combo%20verao%201.jpg">
                     </div>
                 </div>
             </div>
